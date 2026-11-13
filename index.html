@@ -1,1 +1,551 @@
-pulsfit
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <script>document.documentElement.classList.add("js")</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PulsFit Beograd — Pokreni svoj puls</title>
+  <meta name="description" content="PulsFit je teretana u Beogradu: moderna oprema, stručni treneri i grupni časovi od ranog jutra. Zakaži besplatan trening. Demo sajt WebGlow Studio.">
+  <meta name="theme-color" content="#070807">
+  <meta name="author" content="WebGlow Studio">
+  <link rel="canonical" href="https://webglowstudio.github.io/Pulsfit/">
+  <meta property="og:title" content="PulsFit Beograd — Pokreni svoj puls">
+  <meta property="og:description" content="Moderna teretana u Beogradu. Grupni treninzi, stručni treneri i sala otvorena od 06:00. Demo sajt WebGlow Studio.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webglowstudio.github.io/Pulsfit/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80">
+  <meta property="og:image:alt" content="Tamna teretana sa tegovima i spravama">
+  <meta property="og:locale" content="sr_RS">
+  <meta property="og:site_name" content="PulsFit">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PulsFit Beograd — Pokreni svoj puls">
+  <meta name="twitter:description" content="Moderna teretana u Beogradu. Grupni treninzi, stručni treneri i sala otvorena od 06:00. Demo sajt WebGlow Studio.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070807'/%3E%3Cpath d='M3 17h6l2.2-6 3.2 11 2.4-5H29' fill='none' stroke='%2339FF14' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
+  <header class="header" id="vrh" data-header>
+    <div class="wrap header-bar">
+      <a class="logo" href="#vrh" aria-label="PulsFit, početak strane">
+        <svg class="logo-mark" viewBox="0 0 36 36" width="36" height="36" aria-hidden="true">
+          <rect width="36" height="36" rx="10" fill="#101610" stroke="#39FF14" stroke-width="1.5"/>
+          <path d="M6 18h6l2-5 3.2 10 2.2-5H30" fill="none" stroke="#39FF14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Puls<b>Fit</b>
+      </a>
+      <nav class="nav" id="glavni-meni" data-nav aria-label="Glavni meni">
+        <a href="#o-nama">O nama</a>
+        <a href="#cene">Cene</a>
+        <a href="#raspored">Raspored</a>
+        <a href="#treneri">Treneri</a>
+        <a href="#utisci">Utisci</a>
+        <a href="#prijava">Kontakt</a>
+      </nav>
+      <a class="btn btn-primary header-cta" href="#prijava">Probni trening</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="glavni-meni">
+        <span class="sr-only">Otvori meni</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="sadrzaj">
+    <section class="hero">
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=80" alt="Unutrašnjost teretane: tegovi, sprave i prostor za trening" width="1800" height="1200" fetchpriority="high" decoding="async">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <p class="kicker">Teretana · Vračar · Beograd</p>
+        <h1>Pokreni<br><span>svoj puls</span></h1>
+        <p class="hero-lead">Sala koja se budi pre grada. Teški tegovi, glasni časovi i treneri koji te stvarno vide. Prvi trening je besplatan — dođi da osetiš tempo.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#prijava">Zakaži besplatan trening</a>
+          <a class="btn btn-ghost" href="#cene">Pogledaj cene</a>
+        </div>
+        <dl class="stats">
+          <div>
+            <dt>Otvaramo</dt>
+            <dd>06:00</dd>
+          </div>
+          <div>
+            <dt>Časova nedeljno</dt>
+            <dd>35</dd>
+          </div>
+          <div>
+            <dt>Trenera u timu</dt>
+            <dd>4</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>HIIT</span><span>Pilates</span><span>Joga</span><span>Funkcionalni</span><span>Spinning</span><span>Boks</span>
+        </div>
+        <div class="marquee-group">
+          <span>HIIT</span><span>Pilates</span><span>Joga</span><span>Funkcionalni</span><span>Spinning</span><span>Boks</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" id="o-nama">
+      <div class="wrap">
+        <div class="about-top">
+          <div class="reveal">
+            <p class="eyebrow">O nama</p>
+            <h2>Zašto PulsFit</h2>
+            <p class="lead">PulsFit je kompaktna sala na Vračaru, za ljude koji hoće da treniraju ozbiljno, a da ne gube jutro u saobraćaju. Oprema je nova, muzika taman toliko glasna, a niko te ne ostavlja da lutaš između sprava.</p>
+          </div>
+          <div class="mosaic reveal" style="--d:1">
+            <img src="https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?auto=format&fit=crop&w=900&q=80" alt="Niz bučica na stalku u teretani" width="900" height="1200" loading="lazy" decoding="async">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt="Grupni trening u pokretu" width="900" height="600" loading="lazy" decoding="async">
+            <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=900&q=80" alt="Moderna sala sa spravama" width="900" height="600" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="features">
+          <article class="feature reveal" style="--d:0">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <path d="M6 12v8M10 9v14M22 9v14M26 12v8M10 16h12"/>
+              </svg>
+            </span>
+            <h3>Moderna oprema</h3>
+            <p>Slobodni tegovi, ramovi, kettlebellovi i kardio koje ne moraš da čekaš. Sve je spremno čim uđeš.</p>
+          </article>
+          <article class="feature reveal" style="--d:1">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="16" cy="13" r="5"/>
+                <path d="M12.2 17.6 10 26l6-3 6 3-2.2-8.4"/>
+              </svg>
+            </span>
+            <h3>Stručni treneri</h3>
+            <p>Tehnika ispred ega. Dobijaš plan, korekciju i iskren odgovor kad forma krene da beži.</p>
+          </article>
+          <article class="feature reveal" style="--d:2">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <circle cx="12" cy="11" r="3"/>
+                <circle cx="21.5" cy="12.2" r="2.3"/>
+                <path d="M5.5 23.5c.8-3.4 3.2-5 6.5-5s5.7 1.6 6.5 5"/>
+                <path d="M18.2 18.8c1.5-.7 3.1-.7 4.6.1 1.1 1.7 1.9 3.3 2.2 4.6"/>
+              </svg>
+            </span>
+            <h3>Grupni treninzi</h3>
+            <p>HIIT, pilates, joga, spinning, boks i funkcionalni. Energija grupe, a instruktor i dalje gleda tebe.</p>
+          </article>
+          <article class="feature reveal" style="--d:3">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <circle cx="16" cy="16" r="8"/>
+                <path d="M16 11.5V16l3.2 2"/>
+              </svg>
+            </span>
+            <h3>Radno vreme od ranog jutra</h3>
+            <p>Vrata su otvorena od 06:00. Odradiš trening pre kancelarije i dan krene drugačije.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="cene">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="eyebrow">Članarine</p>
+          <h2>Članarine i cene</h2>
+          <p class="lead">Izaberi ritam koji ti odgovara. Članarina pokriva salu i grupne časove. Personalni trening se dogovara posebno.</p>
+          <p class="fine-print"><strong>Cene su primer.</strong> Prikaz je demo i nije zvaničan cenovnik.</p>
+        </div>
+        <div class="plans">
+          <article class="plan plan-pop reveal">
+            <p class="badge">Najpopularnije</p>
+            <h3>Mesečna</h3>
+            <p class="price">5.500 <small>RSD</small></p>
+            <p class="price-note">mesečno</p>
+            <ul class="ticks">
+              <li>neograničen ulazak</li>
+              <li>svi grupni časovi</li>
+              <li>ormarić u sali</li>
+              <li>besplatan prvi trening</li>
+            </ul>
+            <a class="btn btn-primary" href="#prijava">Zakaži besplatan trening</a>
+          </article>
+          <article class="plan reveal" style="--d:1">
+            <h3>Dnevna karta</h3>
+            <p class="price">1.000 <small>RSD</small></p>
+            <p class="price-note">važi na dan kupovine</p>
+            <ul class="ticks">
+              <li>jedan ulazak</li>
+              <li>cela sala</li>
+              <li>bez ugovora</li>
+            </ul>
+            <a class="btn btn-ghost" href="#prijava">Zakaži dolazak</a>
+          </article>
+          <article class="plan reveal" style="--d:2">
+            <h3>Tromesečna</h3>
+            <p class="price">14.500 <small>RSD</small></p>
+            <p class="price-note">oko 4.833 RSD mesečno</p>
+            <ul class="ticks">
+              <li>tri meseca unapred</li>
+              <li>svi grupni časovi</li>
+              <li>niža cena po mesecu</li>
+            </ul>
+            <a class="btn btn-ghost" href="#prijava">Zakaži dolazak</a>
+          </article>
+          <article class="plan reveal" style="--d:3">
+            <h3>Studentska</h3>
+            <p class="price">3.900 <small>RSD</small></p>
+            <p class="price-note">mesečno, uz važeći indeks</p>
+            <ul class="ticks">
+              <li>neograničen ulazak</li>
+              <li>svi grupni časovi</li>
+              <li>ista sala, blaži budžet</li>
+            </ul>
+            <a class="btn btn-ghost" href="#prijava">Zakaži dolazak</a>
+          </article>
+          <article class="plan reveal" style="--d:4">
+            <h3>Personalni trening</h3>
+            <p class="price">3.500 <small>RSD</small></p>
+            <p class="price-note">po terminu, 60 minuta</p>
+            <ul class="ticks">
+              <li>jedan trener</li>
+              <li>plan i korekcija</li>
+              <li>termin po dogovoru</li>
+            </ul>
+            <a class="btn btn-ghost" href="#prijava">Zakaži termin</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="raspored">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="eyebrow">Raspored</p>
+          <h2>Raspored grupnih treninga</h2>
+          <p class="lead">Čas traje 50 minuta. Prvi put dođi deset minuta ranije. Nedeljom nema grupa — sala je otvorena za individualni trening.</p>
+        </div>
+        <div class="schedule-block" data-schedule-block>
+          <div class="day-tabs" role="tablist" aria-label="Filtriraj raspored po danu">
+            <button type="button" role="tab" aria-selected="true" aria-controls="tabela-rasporeda" data-day-tab="svi">Svi dani</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="tabela-rasporeda" data-day-tab="pon">Pon</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="tabela-rasporeda" data-day-tab="uto">Uto</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="tabela-rasporeda" data-day-tab="sre">Sre</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="tabela-rasporeda" data-day-tab="cet">Čet</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="tabela-rasporeda" data-day-tab="pet">Pet</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="tabela-rasporeda" data-day-tab="sub">Sub</button>
+          </div>
+          <p class="scroll-hint">Prevuci tabelu u stranu ili izaberi dan.</p>
+          <div class="table-wrap">
+            <table class="schedule" id="tabela-rasporeda" data-schedule data-filter="svi">
+              <caption class="sr-only">Nedeljni raspored grupnih treninga, od ponedeljka do subote</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Vreme</th>
+                  <th scope="col" data-day="pon"><abbr title="Ponedeljak">Pon</abbr></th>
+                  <th scope="col" data-day="uto"><abbr title="Utorak">Uto</abbr></th>
+                  <th scope="col" data-day="sre"><abbr title="Sreda">Sre</abbr></th>
+                  <th scope="col" data-day="cet"><abbr title="Četvrtak">Čet</abbr></th>
+                  <th scope="col" data-day="pet"><abbr title="Petak">Pet</abbr></th>
+                  <th scope="col" data-day="sub"><abbr title="Subota">Sub</abbr></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">07:00</th>
+                  <td data-day="pon"><span class="chip chip-hiit">HIIT</span></td>
+                  <td data-day="uto"><span class="chip chip-spin">Spinning</span></td>
+                  <td data-day="sre"><span class="chip chip-hiit">HIIT</span></td>
+                  <td data-day="cet"><span class="chip chip-funk">Funkcionalni trening</span></td>
+                  <td data-day="pet"><span class="chip chip-spin">Spinning</span></td>
+                  <td data-day="sub"><span class="chip chip-joga">Joga</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">09:30</th>
+                  <td data-day="pon"><span class="chip chip-pilates">Pilates</span></td>
+                  <td data-day="uto"><span class="chip chip-joga">Joga</span></td>
+                  <td data-day="sre"><span class="chip chip-pilates">Pilates</span></td>
+                  <td data-day="cet"><span class="chip chip-joga">Joga</span></td>
+                  <td data-day="pet"><span class="chip chip-pilates">Pilates</span></td>
+                  <td data-day="sub"><span class="chip chip-hiit">HIIT</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">12:15</th>
+                  <td data-day="pon"><span class="chip chip-funk">Funkcionalni trening</span></td>
+                  <td data-day="uto"><span class="chip chip-boks">Boks</span></td>
+                  <td data-day="sre"><span class="chip chip-spin">Spinning</span></td>
+                  <td data-day="cet"><span class="chip chip-hiit">HIIT</span></td>
+                  <td data-day="pet"><span class="chip chip-boks">Boks</span></td>
+                  <td data-day="sub"><span class="chip chip-funk">Funkcionalni trening</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">17:30</th>
+                  <td data-day="pon"><span class="chip chip-spin">Spinning</span></td>
+                  <td data-day="uto"><span class="chip chip-hiit">HIIT</span></td>
+                  <td data-day="sre"><span class="chip chip-boks">Boks</span></td>
+                  <td data-day="cet"><span class="chip chip-pilates">Pilates</span></td>
+                  <td data-day="pet"><span class="chip chip-funk">Funkcionalni trening</span></td>
+                  <td data-day="sub"><span class="chip chip-boks">Boks</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">19:00</th>
+                  <td data-day="pon"><span class="chip chip-boks">Boks</span></td>
+                  <td data-day="uto"><span class="chip chip-funk">Funkcionalni trening</span></td>
+                  <td data-day="sre"><span class="chip chip-joga">Joga</span></td>
+                  <td data-day="cet"><span class="chip chip-spin">Spinning</span></td>
+                  <td data-day="pet"><span class="chip chip-hiit">HIIT</span></td>
+                  <td data-day="sub"><span class="chip chip-spin">Spinning</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">20:30</th>
+                  <td data-day="pon"><span class="chip chip-joga">Joga</span></td>
+                  <td data-day="uto"><span class="chip chip-pilates">Pilates</span></td>
+                  <td data-day="sre"><span class="chip chip-funk">Funkcionalni trening</span></td>
+                  <td data-day="cet"><span class="chip chip-boks">Boks</span></td>
+                  <td data-day="pet"><span class="chip chip-joga">Joga</span></td>
+                  <td data-day="sub" class="off" aria-label="Nema časa">—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="treneri">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="eyebrow">Tim</p>
+          <h2>Treneri</h2>
+          <p class="lead">Četiri trenera, četiri tempa. Reci nam cilj na probnom, pa te spajamo sa trenerom koji tome odgovara.</p>
+          <p class="fine-print">Imena trenera su izmišljena. Fotografije su besplatne stock slike, nisu portreti stvarnog tima.</p>
+        </div>
+        <div class="trainers">
+          <article class="trainer reveal">
+            <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=700&h=840&q=80" alt="Stock fotografija treninga snage sa bučicama" width="700" height="840" loading="lazy" decoding="async">
+            <div class="trainer-body">
+              <h3>Marko Jovanović</h3>
+              <p class="specialty">Snaga i hipertrofija</p>
+              <p>Deset godina u sali, bez praznih priča. Marko slaže programe za ljude koji hoće da budu jači, a da leđa ostanu cela.</p>
+            </div>
+          </article>
+          <article class="trainer reveal" style="--d:1">
+            <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=700&h=840&q=80" alt="Stock fotografija žene tokom treninga" width="700" height="840" loading="lazy" decoding="async">
+            <div class="trainer-body">
+              <h3>Ana Petrović</h3>
+              <p class="specialty">Pilates i mobilnost</p>
+              <p>Ana vraća telo u red: disanje, kukovi, leđa. Posle njenog časa drugačije hodaš.</p>
+            </div>
+          </article>
+          <article class="trainer reveal" style="--d:2">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&h=840&q=80" alt="Stock fotografija muškarca u teretani" width="700" height="840" loading="lazy" decoding="async">
+            <div class="trainer-body">
+              <h3>Nikola Ilić</h3>
+              <p class="specialty">HIIT i funkcionalni trening</p>
+              <p>Kratko, glasno, pametno. Nikola drži tempo — ti držiš ritam, ili bar pokušavaš.</p>
+            </div>
+          </article>
+          <article class="trainer reveal" style="--d:3">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&h=840&q=80" alt="Stock fotografija vežbanja snage" width="700" height="840" loading="lazy" decoding="async">
+            <div class="trainer-body">
+              <h3>Jelena Simić</h3>
+              <p class="specialty">Joga i oporavak</p>
+              <p>Za dane kad puls treba da uspori. Jelena vodi jogu tako da i početnici ostanu do kraja.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="utisci">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="eyebrow">Utisci članova</p>
+          <h2>Glas iz svlačionice</h2>
+          <p class="fine-print"><strong>Primer utisaka.</strong> Citati su izmišljeni za potrebe ovog demo sajta.</p>
+        </div>
+        <div class="quotes">
+          <figure class="quote reveal">
+            <p class="badge">Primer</p>
+            <blockquote>Posle tri nedelje jutarnjeg HIIT-a stignem na posao budna. Ekipa je direktna, bez glume.</blockquote>
+            <figcaption>Milica R. <span>Vračar</span></figcaption>
+          </figure>
+          <figure class="quote reveal" style="--d:1">
+            <p class="badge">Primer</p>
+            <blockquote>Studentska članarina mi je spasila budžet, a treneri me nisu tretirali kao prolaznika.</blockquote>
+            <figcaption>Stefan K. <span>student</span></figcaption>
+          </figure>
+          <figure class="quote reveal" style="--d:2">
+            <p class="badge">Primer</p>
+            <blockquote>Došla sam zbog pilatesa, ostala jer neko stvarno gleda kako radim čučanj.</blockquote>
+            <figcaption>Ivana M. <span>Dorćol</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="prijava">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Kontakt</p>
+          <h2>Prijava za probni trening</h2>
+          <p class="lead">Popuni par polja. Javljamo se sa predlogom termina. Ovo je demo: podaci ostaju u tvom pregledaču i ne idu na server.</p>
+          <div class="form-card">
+            <form data-form novalidate>
+              <div class="fields">
+                <div class="field">
+                  <label for="ime">Ime i prezime <span aria-hidden="true">*</span></label>
+                  <input id="ime" name="ime" type="text" autocomplete="name" required maxlength="80" placeholder="npr. Ana Petrović">
+                </div>
+                <div class="field">
+                  <label for="telefon">Telefon <span aria-hidden="true">*</span></label>
+                  <input id="telefon" name="telefon" type="tel" autocomplete="tel" required minlength="6" maxlength="30" placeholder="060 123 4567">
+                </div>
+                <div class="field">
+                  <label for="email">Email <span aria-hidden="true">*</span></label>
+                  <input id="email" name="email" type="email" autocomplete="email" required maxlength="120" placeholder="ana@email.com">
+                </div>
+                <div class="field">
+                  <label for="trening">Izbor treninga <span aria-hidden="true">*</span></label>
+                  <select id="trening" name="trening" required>
+                    <option value="">Izaberi trening</option>
+                    <option>Besplatan probni trening</option>
+                    <option>HIIT</option>
+                    <option>Pilates</option>
+                    <option>Joga</option>
+                    <option>Funkcionalni trening</option>
+                    <option>Spinning</option>
+                    <option>Boks</option>
+                    <option>Personalni trening</option>
+                  </select>
+                </div>
+                <div class="field field-wide">
+                  <label for="poruka">Poruka</label>
+                  <textarea id="poruka" name="poruka" rows="4" maxlength="600" placeholder="Reci nam cilj, povredu ili kad ti odgovara termin."></textarea>
+                </div>
+              </div>
+              <p class="form-note">Polja označena zvezdicom su obavezna. Demo forma — podaci se ne šalju.</p>
+              <button class="btn btn-primary" type="submit">Pošalji prijavu</button>
+            </form>
+            <div class="form-thanks" data-thanks hidden tabindex="-1" role="status">
+              <p class="badge">Primljeno</p>
+              <h3>Hvala, <span data-thanks-name></span>!</h3>
+              <p>Prijava je primljena ovde, u pregledaču. Ništa nismo poslali dalje — na pravom sajtu bismo te nazvali da dogovorimo besplatan trening.</p>
+              <button class="btn btn-ghost" type="button" data-form-reset>Pošalji još jednu</button>
+            </div>
+            <noscript>
+              <p class="form-note">Za demo poruku potreban je uključen JavaScript. Podaci se ionako ne šalju na server.</p>
+            </noscript>
+          </div>
+        </div>
+        <aside class="perks reveal" style="--d:1">
+          <h3>Šta dobijaš na probnom</h3>
+          <ol>
+            <li>Kratak obilazak sale</li>
+            <li>Razgovor o cilju</li>
+            <li>Jedan vođeni trening</li>
+            <li>Bez pritiska da se odmah učlaniš</li>
+          </ol>
+          <p>Ponesi patike i vodu. Ostalo imamo.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="lokacija">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="eyebrow">Lokacija</p>
+          <h2>Radno vreme i adresa</h2>
+          <p class="lead">Svrati da vidiš salu uživo. Prvi trening ne naplaćujemo.</p>
+        </div>
+        <div class="location-grid">
+          <article class="info-card reveal">
+            <h3>Radno vreme</h3>
+            <dl class="hours">
+              <div>
+                <dt>Ponedeljak–petak</dt>
+                <dd>06:00–23:00</dd>
+              </div>
+              <div>
+                <dt>Subota</dt>
+                <dd>08:00–21:00</dd>
+              </div>
+              <div>
+                <dt>Nedelja</dt>
+                <dd>09:00–18:00</dd>
+              </div>
+            </dl>
+            <p class="fine-print">Nedeljom nema grupnih časova.</p>
+          </article>
+          <article class="info-card reveal" style="--d:1">
+            <h3>Adresa</h3>
+            <address>
+              <strong>PulsFit</strong><br>
+              Resavska 28<br>
+              11000 Beograd, Vračar<br>
+              <a href="tel:+381115550142">+381 11 555 0142</a><br>
+              <span>zdravo@pulsfit.rs</span>
+            </address>
+            <p class="fine-print">Adresa je izmišljena. Ovo je fiktivna teretana.</p>
+          </article>
+          <div class="map-frame reveal" style="--d:2">
+            <iframe class="map" title="Mapa Beograda" src="https://maps.google.com/maps?q=Belgrade&amp;z=12&amp;hl=sr&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            <p class="map-caption">Ugrađena mapa Beograda. <a href="https://maps.google.com/?q=Belgrade&amp;hl=sr" target="_blank" rel="noopener noreferrer">Otvori mapu</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="logo logo-static">Puls<b>Fit</b></p>
+        <p>Pokreni svoj puls. Fiktivna teretana u Beogradu, složena kao prezentacija za vlasnike sala.</p>
+      </div>
+      <div>
+        <h2>Strana</h2>
+        <ul class="footer-links">
+          <li><a href="#o-nama">O nama</a></li>
+          <li><a href="#cene">Članarine i cene</a></li>
+          <li><a href="#raspored">Raspored</a></li>
+          <li><a href="#treneri">Treneri</a></li>
+          <li><a href="#utisci">Utisci</a></li>
+          <li><a href="#prijava">Kontakt</a></li>
+          <li><a href="#lokacija">Radno vreme i adresa</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Prati nas</h2>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.6l.4-3H13v-2c0-.6.4-1 1-1z"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M14 4c.4 2.4 1.8 4 4.2 4.3v2.4c-1.4 0-2.7-.4-3.8-1.2v6.2c0 3.2-2.4 5.6-5.7 5.6S3 18.9 3 15.7c0-3.1 2.4-5.5 5.5-5.6v2.6c-1.6.1-2.9 1.4-2.9 3s1.3 2.9 3 2.9 2.9-1.3 2.9-3V4h2.5z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M22 12.2s0-3.2-.4-4.6c-.2-.9-.9-1.6-1.8-1.8C18.2 5.4 12 5.4 12 5.4s-6.2 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 9 2 12.2 2 12.2s0 3.2.4 4.6c.2.9.9 1.6 1.8 1.8 1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.4.4-4.6.4-4.6zM10 15.5v-6.6l5.2 3.3-5.2 3.3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <p class="demo-credit">Demo sajt: WebGlow Studio</p>
+      <p class="legal">© PulsFit Beograd. Fiktivna teretana. Imena, cene i utisci su izmišljeni i nisu povezani sa postojećim salama.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
